@@ -334,4 +334,205 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;  
     border-color: rgb(163, 163, 163);
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.1rem;
+}
+
+.experience-sub-title {
+    color: rgb(85,85,85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    text-align: initial;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    align-items: left;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    width: 10rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+/* PROJECTS */
+#projects {
+    position: relative;
+}
+
+.section_text_p1{
+    margin-top: 9rem;
+}
+
+.title{
+    margin-bottom: 2rem;
+}
+
+.color-container {
+    color: rgb(163, 163, 163);
+    background-color: rgb(255, 255, 255);
+
+}
+
+.project-img, .project-pic {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 2rem;
+    display: block;
+    object-fit: cover;
+    box-sizing: border-box;
+
+}
+
+.project-title {
+    margin: 1rem;
+    color: black
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+.details-container, .color-container, .project-btn {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem; 
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(255, 255, 255);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+.contact-icon {
+    cursor: default;
+    height: 2rem;
+}
+
+.email-icon {
+    height: 2.4rem;
+}
+
+/* FOOTER */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #181a1b;
+    color: #f8f8f8;
+}
+
+body.dark-mode nav,
+body.dark-mode footer {
+    background: #23272a;
+    color: #f8f8f8;
+}
+
+body.dark-mode .details-container,
+body.dark-mode .details-containers,
+body.dark-mode .color-container,
+body.dark-mode .experience-containers {
+    background: #23272a !important;
+    border-color: #4fc3f7 !important;
+    color: #f8f8f8 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+body.dark-mode a {
+    color: #4fc3f7;
+    text-decoration-color: #4fc3f7;
+}
+
+body.dark-mode a:hover {
+    color: #82e9de;
+    text-decoration-color: #82e9de;
+}
+
+body.dark-mode .project-btn {
+    background: #2d333b;
+    color: #f8f8f8;
+    border-color: #4fc3f7;
+}
+
+body.dark-mode .project-title,
+body.dark-mode .experience-sub-title,
+body.dark-mode .title {
+    color: #f8f8f8;
+}
+
+body.dark-mode .icon,
+body.dark-mode .contact-icon {
+    filter: brightness(1.5) invert(1);
+}
+
+body.dark-mode .btn {
+    background: #23272a;
+    color: #f8f8f8;
+    border-color: #4fc3f7;
+}
+
+body.dark-mode .btn:hover {
+    background: #4fc3f7;
+    color: #23272a;
+}
+
+body.dark-mode p,
+body.dark-mode .section_text_p1,
+body.dark-mode .section_text_p2 {
+    color: #e0e0e0;
 }

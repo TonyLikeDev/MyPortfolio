@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="mdeiaqueries.css">
 
 </head>
+
 <body>
     <nav id="desktop-nav">
         <div class="logo">
@@ -22,6 +23,7 @@
             </ul>
         </div>
     </nav>
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
     <nav id = "hamburger-nav"> 
         <div class="logo"> <h1>Tony's Portfolio</h1> </div>
         <div class="hamburger-menu">
@@ -55,14 +57,12 @@
             </button>
             </div>
             <div id="social_container">
-                <img src="/assets/linkedin.png" 
-                    alt="My LinkedIn" 
-                    class = "icon"
-                    onclick="location.href='https://linkedin.com/in/nguyenlehoangg/'"/>
-                <img src="/assets/github.png" 
-                    alt="My GitHub"
-                    class="icon"
-                    onclick="location.href='https://github.com/TonyLikeDev'"/>
+                <a href="https://linkedin.com/in/nguyenlehoangg/" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/linkedin.png" alt="My LinkedIn" class="icon" />
+                </a>
+                <a href="https://github.com/TonyLikeDev" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/github.png" alt="My GitHub" class="icon" />
+                </a>
             </div>
         </div>
     </section>
@@ -113,8 +113,9 @@
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="experience-containers">
+                <!-- Frontend Development -->
                 <div class="details-containers">
-                    <h2 class="experience-sub-title">Full-Stack Development</h2>
+                    <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png"
@@ -178,6 +179,7 @@
                         </article>
                     </div>
                 </div>
+                <!-- Backend Development -->
                 <div class="details-containers">
                     <h2 class="experience-sub-title">Backend Development</h2>
                     <div class="article-container">
@@ -214,6 +216,52 @@
                     </div>
                 </div>
             </div>
+            <!-- Tools -->
+            <div class="details-containers">
+                    <h2 class="experience-sub-title">Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Adobe Photoshop</h3>
+
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Docker</h3>
+
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>React</h3>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
         </div>
         <img src="./assets/arrow.png" 
             alt="Arrow icon" 
@@ -221,6 +269,101 @@
             onclick="location.href='#./projects'"
             />
     </section>
+    <section id="projects">
+        <p class="section_text_p1">Check Out My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <!-- PROJECT 1 -->
+            <div class="details-container color-container"k>
+                <div class="article-container">
+                    <img src="./assets/project-1.png"
+                    alt="Project 1"
+                    class="project-pic"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'"> GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'"> Live Demo
+                    </button>
+                </div>
+            </div>
+            <!-- PROJECT 2 -->
+            <div class="details-container color-container"k>
+                <div class="article-container">
+                    <img src="./assets/project-2.png"
+                    alt="Project 2"
+                    class="project-pic"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'"> GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'"> Live Demo
+                    </button>
+                </div>
+            </div>
+            <!-- PROJECT 3  -->
+            <div class="details-container color-container"k>
+                <div class="article-container">
+                    <img src="./assets/project-3.png"
+                    alt="Project 3"
+                    class="project-pic"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'"> GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'"> Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='#./projects'"
+            />
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get In Touch</p>  
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png"
+                alt="Email Icon"
+                class="contact-icon email-icon"
+                />
+                <p><a href="mailto:tonyhoangnguyen.work@gmail.com">Tonyhoangnguyen.work@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png"
+                alt="LinkedIn Icon"
+                class="contact-icon"
+                />
+                <p><a href="https://linkedin.com/in/nguyenlehoangg/">LinkedIn</a></p>
+            </div>
+        </div>    
+    </section>
+    <footer>
+        <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+        </nav>
+        <p>Tony's Portfolio. &#169; 2025.</p>
+    </footer>
     <script src="scripts.js" defer></script>
 </body>
 </html>
