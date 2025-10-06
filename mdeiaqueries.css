@@ -57,7 +57,8 @@
     #profile {
         height: 83vh;
         margin-bottom: 0;
-        margin-top: 4.5rem !important;
+        /* Responsive smaller top gap on very small screens */
+        margin-top: clamp(7rem, 9vh, 4.5rem) !important; /* Overrides desktop margin-top */
     }
     article {
         font-size: 1rem;
@@ -79,8 +80,13 @@
         font-size: 1.25rem;
     }
     .logo {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
+
+    .text-container {
+        text-align: center !important;
+    }
+
 
     .nav-links {
         flex-direction: column;
@@ -91,7 +97,17 @@
         width: auto;
         height: 46vw;
         justify-content: center;
+        /* Reduced bottom margin to tighten gap below image */
+        margin-bottom: 0.5rem;
     }
+
+    
+    .section_text {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
     .section_text_p2 {
         font-size: 1.25rem;
     }
@@ -186,6 +202,18 @@
         height: auto !important;
         padding: 1rem 0 !important;
     }
+    /* Tighten spacing between profile image and headings */
+    #profile .section_text_p1 { 
+        margin-top: 1rem !important; 
+        margin-bottom: 0.4rem !important; 
+    }
+    #profile .title { 
+        margin-top: 0.15rem !important; 
+        margin-bottom: 0.6rem !important; 
+    }
+    #profile .section_text_p2 { 
+        margin-top: 0.4rem !important; 
+    }
     .contact-info-upper-container {
         flex-direction: column !important;
         gap: 1rem !important;
@@ -233,7 +261,7 @@
         height: 140px !important;
         max-width: 60vw !important;
         max-height: 60vw !important;
-        margin: 0 auto 1rem !important;
+        margin: 0 auto 0.3rem !important;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
